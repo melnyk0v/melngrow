@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>meln.grow · Anton Melnykov · Publicidad en Meta y Google</title>
+<link rel="preload" href="../fonts/jakarta-30172518.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="../fonts/dmmono-400-55b0284c.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:200 800;font-display:swap;src:url(../fonts/jakarta-30172518.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+0104-0107,U+010C-010D,U+0118-011B,U+011E-011F,U+0130-0131,U+0141-0144,U+0150-0153,U+0158-015B,U+015E-0161,U+0170-0171,U+0179-017E,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+20B4,U+20BD,U+2122,U+2190-2193,U+2212,U+FEFF,U+FFFD}@font-face{font-family:"DM Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/dmmono-400-55b0284c.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+0131,U+0141-0142,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2190-2193,U+2212,U+FEFF,U+FFFD}@font-face{font-family:"DM Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/dmmono-500-d8ad7e16.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+0131,U+0141-0142,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2190-2193,U+2212,U+FEFF,U+FFFD}@font-face{font-family:"Jakarta Fallback";font-weight:100 500;src:local("Arial"),local("ArialMT"),local("Helvetica"),local("Liberation Sans"),local("LiberationSans");size-adjust:104.29%;ascent-override:99.53%;descent-override:21.29%;line-gap-override:0%;unicode-range:U+0000-024F,U+2000-206F,U+20A0-20C0,U+2122,U+2190-2199}@font-face{font-family:"Jakarta Fallback";font-weight:600 900;src:local("Arial Bold"),local("Arial-BoldMT"),local("Helvetica Bold"),local("Helvetica-Bold"),local("Liberation Sans Bold"),local("LiberationSans-Bold");size-adjust:101.4%;ascent-override:102.37%;descent-override:21.89%;line-gap-override:0%;unicode-range:U+0000-024F,U+2000-206F,U+20A0-20C0,U+2122,U+2190-2199}:root{color-scheme: dark;--bg: #080a08;--raise: #0e120d;--card: #111610;--line: rgba(236,244,226,0.1);--line-lime: rgba(167,223,87,0.28);--fg: #f0f3eb;--mute: #a4ad9b;--dim: #6f7968;--lime: #a7df57;--lime-wash: rgba(167,223,87,0.08);--lime-glow: rgba(120,196,48,0.32);--on-lime: #0a1205;--on-lime-mute: rgba(10,18,5,0.72);--f-head: "Plus Jakarta Sans","Jakarta Fallback","Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;--f-body: "Plus Jakarta Sans","Jakarta Fallback",system-ui,-apple-system,"Segoe UI",sans-serif;--f-mono: "DM Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;--t-mega: clamp(2.5rem,0.9rem + 6.6vw,8.2rem);--t-giant: clamp(3rem,0.6rem + 9.6vw,10.5rem);--t-h2: clamp(2.1rem,1.1rem + 3.9vw,5rem);--t-h3: clamp(1.15rem,1.05rem + 0.4vw,1.4rem);--t-body: 1.0625rem;--t-small: 0.875rem;--t-label: 0.72rem;--gutter: max(clamp(18px,4vw,40px),env(safe-area-inset-left,0px));--gutter-r: max(clamp(18px,4vw,40px),env(safe-area-inset-right,0px));--wrap: 1320px;--section: clamp(72px,8vw,124px);--r: 20px;--r-lg: clamp(22px,2.4vw,32px)}*{box-sizing: border-box}html{scroll-behavior: smooth;-webkit-text-size-adjust: 100%}body{background: transparent;color: var(--fg);font-family: var(--f-body);font-size: var(--t-body);line-height: 1.6;-webkit-font-smoothing: antialiased;overflow-x: hidden;margin: 0}[hidden]{display: none !important}.bg{position: fixed;inset: 0;z-index: -2;pointer-events: none;background: #000}.bg img{width: 100%;height: 100%;max-width: none;object-fit: contain;object-position: 0% 100%}html{background-color: #000}body::before{content: "";position: fixed;inset: 0 0 auto;height: env(safe-area-inset-top,0px);z-index: 30;background: var(--bg)}a{color: inherit}img{max-width: 100%;display: block}picture{display: contents}picture>source{display: none}:focus-visible{outline: 2px solid var(--lime);outline-offset: 3px;border-radius: 8px}.wrap{max-width: calc(var(--wrap) + 80px);margin-inline: auto;padding-left: var(--gutter);padding-right: var(--gutter-r)}h1,h2,h3{font-family: var(--f-head);font-weight: 800;margin: 0;text-wrap: balance}h1,h2{text-transform: uppercase;letter-spacing: -0.045em;line-height: 0.98}h1{line-height: 1.01}h3{letter-spacing: -0.02em;line-height: 1.2}h1 em,h2 em,p em{font-style: normal;color: var(--lime)}p{margin: 0}.tag{display: inline-flex;align-items: center;gap: 0.7rem;font-family: var(--f-mono);font-size: var(--t-label);letter-spacing: 0.16em;text-transform: uppercase;color: var(--mute)}.tag i{font-style: normal;color: var(--lime);border: 1px solid var(--line-lime);border-radius: 999px;padding: 0.22rem 0.6rem;letter-spacing: 0.08em}.label{font-family: var(--f-mono);font-size: 0.68rem;letter-spacing: 0.16em;text-transform: uppercase;color: var(--dim)}.lede{color: var(--mute);max-width: 54ch;font-size: clamp(1.02rem,0.98rem + 0.25vw,1.15rem)}.btn{display: inline-flex;align-items: center;justify-content: space-between;gap: 0.9rem;padding: 0.5rem 0.5rem 0.5rem 1.4rem;min-height: 56px;border-radius: 999px;font-family: var(--f-head);font-weight: 700;font-size: 0.98rem;letter-spacing: -0.01em;text-decoration: none;background: var(--lime);color: var(--on-lime);border: 1px solid var(--lime);transition: transform 0.2s ease,box-shadow 0.2s ease,background 0.2s ease,color 0.2s ease;white-space: nowrap}.btn .bi{width: 42px;height: 42px;border-radius: 50%;display: grid;place-items: center;flex: none;background: var(--on-lime);color: var(--lime);transition: transform 0.25s ease}.btn .bi svg{width: 18px;height: 18px}@media (hover: hover){.btn:hover{transform: translateY(-2px);box-shadow: 0 16px 40px -16px var(--lime-glow)}.btn:hover .bi{transform: rotate(-45deg)}}.btn.ghost{background: transparent;color: var(--fg);border-color: var(--line)}.btn.ghost .bi{background: var(--lime);color: var(--on-lime)}@media (hover: hover){.btn.ghost:hover{border-color: var(--lime);box-shadow: none}}.btn.ghost:not(:has(.bi)){padding: 0.5rem 1.5rem}.btn.dark{background: var(--on-lime);color: var(--lime);border-color: var(--on-lime)}@media (max-width: 380px){.btn{white-space: normal;max-width: 100%;text-align: left}}.btn.dark .bi{background: var(--lime);color: var(--on-lime)}.btn.sm{min-height: 46px;padding: 0.35rem 0.35rem 0.35rem 1.1rem;font-size: 0.88rem;gap: 0.7rem}.btn.sm .bi{width: 34px;height: 34px}.btn.sm .bi svg{width: 15px;height: 15px}.top{position: sticky;top: env(safe-area-inset-top,0px);z-index: 20;background: rgba(8,10,8,0.72);-webkit-backdrop-filter: blur(16px) saturate(140%);backdrop-filter: blur(16px) saturate(140%);border-bottom: 1px solid var(--line)}.top .wrap{display: flex;align-items: center;gap: 1rem;min-height: 76px}.brand{font-family: var(--f-head);font-weight: 700;font-size: 1.4rem;letter-spacing: -0.04em;text-decoration: none;white-space: nowrap}.brand b{color: var(--lime);font-weight: 800}.nav{display: flex;gap: 0.25rem;margin-left: auto;padding: 5px;border: 1px solid var(--line);border-radius: 999px;background: rgba(255,255,255,0.02)}.nav a{white-space: nowrap;color: var(--mute);text-decoration: none;font-size: 0.86rem;font-weight: 600;padding: 0.5rem 0.95rem;border-radius: 999px;transition: color 0.15s,background 0.15s}@media (hover: hover){.nav a:hover{color: var(--fg);background: rgba(255,255,255,0.06)}}.top .spacer{flex: 1}.lang{display: inline-flex;padding: 4px;border: 1px solid var(--line);border-radius: 999px;gap: 2px}.lang a,.lang button{font-family: var(--f-mono);font-size: 0.75rem;letter-spacing: 0.08em;padding: 0.42rem 0.72rem;border-radius: 999px;border: 0;background: none;color: var(--mute);text-decoration: none;cursor: pointer;line-height: 1.2}@media (hover: hover){.lang a:hover,.lang button:hover{color: var(--fg)}}.lang [aria-current="page"],.lang [aria-pressed="true"]{background: var(--lime);color: var(--on-lime)}@media (max-width: 1120px){.nav{display: none}}@media (max-width: 560px){.top .btn{display: none}.top .wrap{min-height: 64px}.brand{font-size: 1.2rem}}@keyframes float{0%,100%{transform: translateY(0)}50%{transform: translateY(-14px)}}.hero{position: relative;overflow: hidden}.hero-art{position: absolute;z-index: 0;top: clamp(-110px,-6vw,-30px);right: max(-2vw,calc((100vw - 1400px) / 2));width: min(60vw,860px);pointer-events: none;mix-blend-mode: screen;-webkit-mask-image: radial-gradient(ellipse 72% 72% at 70% 52%,#000 46%,transparent 100%);mask-image: radial-gradient(ellipse 72% 72% at 70% 52%,#000 46%,transparent 100%)}.hero-art img{width: 100%;height: auto;animation: float 12s ease-in-out infinite}.hero .wrap{position: relative;z-index: 1;padding-block: clamp(28px,4vw,48px) clamp(56px,7vw,96px)}.hero-meta{display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between;gap: 1rem 2rem}.who{display: inline-flex;align-items: center;gap: 0.7rem;padding: 4px 16px 4px 4px;border: 1px solid var(--line);border-radius: 999px;background: rgba(8,10,8,0.5)}.who img{width: 40px;height: 40px;border-radius: 50%;object-fit: cover}.who b{font-family: var(--f-head);font-weight: 700;font-size: 0.95rem}.kicker{font-family: var(--f-mono);font-size: var(--t-label);letter-spacing: 0.14em;text-transform: uppercase;color: var(--mute)}.hero h1{font-size: min(var(--t-mega),10.5vh);margin-top: clamp(28px,4vw,52px);max-width: 15ch}.hero-foot{display: grid;grid-template-columns: minmax(0,1fr) auto;gap: 2rem 3rem;align-items: end;margin-top: clamp(24px,3.4vw,40px);padding-top: clamp(20px,2.4vw,28px);border-top: 1px solid var(--line)}.hero-copy{display: grid;gap: 0.9rem;min-width: 0}.guarantee{display: flex;align-items: center;gap: clamp(12px,1.6vw,18px);max-width: 720px;padding: clamp(16px,2vw,22px) clamp(18px,2.4vw,28px);border-radius: var(--r);background: var(--fg);color: var(--on-lime);box-shadow: 0 18px 50px rgba(0,0,0,0.45),0 0 70px rgba(167,223,87,0.28)}.guarantee p{margin: 0;font-size: clamp(1.05rem,0.9rem + 0.5vw,1.32rem);font-weight: 700;line-height: 1.35;letter-spacing: -0.015em}.guarantee mark{background: var(--lime);color: var(--on-lime);padding: 0 0.22em;border-radius: 6px;-webkit-box-decoration-break: clone;box-decoration-break: clone;white-space: nowrap}.g-ic{flex: none;width: clamp(40px,4vw,50px);height: clamp(40px,4vw,50px);border-radius: 50%;background: var(--on-lime);color: var(--lime);display: grid;place-items: center}.g-ic svg{width: 52%;height: 52%}.hero-copy .terms{margin: 0;max-width: 62ch;font-size: 0.78rem;line-height: 1.5;color: rgba(240,243,235,0.5)}.hero-cta{display: flex;flex-wrap: wrap;gap: 0.75rem;align-items: center;justify-content: flex-end}.hero-cta .note{flex-basis: 100%;text-align: right;font-size: var(--t-small);color: var(--dim)}@media (max-width: 860px){.hero-foot{grid-template-columns: 1fr}.hero-cta{justify-content: flex-start}.hero-cta .note{text-align: left}}@media (max-width: 760px){.hero-art{width: 112vw;right: -9vw;top: -24px;opacity: 0.7}}.marquee{overflow: hidden;border-block: 1px solid var(--line);padding-block: clamp(16px,2vw,24px);background: rgba(14,18,13,0.55)}.marquee .track{display: flex;width: max-content;animation: marquee 60s linear infinite}.marquee .group{display: flex;align-items: center;gap: clamp(20px,2.6vw,40px);padding-right: clamp(20px,2.6vw,40px)}.marquee .item{font-family: var(--f-head);font-weight: 800;text-transform: uppercase;letter-spacing: -0.03em;font-size: clamp(1.3rem,0.9rem + 1.8vw,2.6rem);white-space: nowrap;line-height: 1}.marquee .item:nth-child(4n + 3){color: var(--dim)}.marquee svg{width: clamp(18px,2vw,28px);height: clamp(18px,2vw,28px);color: var(--lime);flex: none}@keyframes marquee{to{transform: translateX(-50%)}}.stats-sec{padding-block: clamp(48px,6vw,80px)}.stats{display: grid;grid-template-columns: repeat(3,minmax(0,1fr))}.stat{padding: 0 clamp(16px,2.4vw,32px);min-width: 0;display: grid;gap: 0.6rem;align-content: start}.stat:first-child{padding-left: 0}.stat + .stat{border-left: 1px solid var(--line)}.stat b{font-family: var(--f-head);font-weight: 800;font-size: clamp(2.2rem,1.2rem + 3.4vw,4.8rem);letter-spacing: -0.05em;line-height: 0.95;text-transform: uppercase;font-variant-numeric: tabular-nums}.stat:nth-child(2) b{color: var(--lime)}.stat>span{color: var(--mute);font-size: var(--t-small);max-width: 28ch}.stat-text{align-content: center}.stat-text p{margin: 0;font-family: var(--f-head);font-weight: 700;font-size: clamp(1.2rem,0.85rem + 1.1vw,1.9rem);line-height: 1.18;letter-spacing: -0.025em;color: var(--fg);max-width: 20ch;text-wrap: balance}.stats-sec{overflow-x: clip}@media (max-width: 760px){.stats{grid-template-columns: 1fr}.stat,.stat:first-child{padding: 1.4rem 0;border-left: 0 !important;border-bottom: 1px solid var(--line)}.stat:first-child{padding-top: 0}}.sec{padding-block: var(--section);border-top: 1px solid var(--line);scroll-margin-top: 40px}.stack{display: grid;gap: 1.2rem;align-content: start;min-width: 0}.sec-head{display: grid;gap: 1.3rem;margin-bottom: clamp(40px,5vw,72px)}.sec-head h2,.sec h2{font-size: var(--t-h2)}.sec-head h2{max-width: 18ch}.sec-head.row{grid-template-columns: minmax(0,1.25fr) minmax(0,0.75fr);align-items: end;gap: 1.5rem 3rem}@media (max-width: 900px){.sec-head.row{grid-template-columns: 1fr}}.svc-grid{display: grid;grid-template-columns: repeat(2,minmax(0,1fr));gap: 16px;align-items: start}.svc-card{--pad: clamp(20px,2.4vw,32px);position: relative;display: grid;gap: 14px;padding: var(--pad);border: 1px solid var(--line);border-radius: var(--r-lg);background: rgba(14,18,13,0.82);min-width: 0;cursor: pointer;-webkit-tap-highlight-color: transparent;transition: border-color 0.25s,transform 0.25s}@media (hover: hover){.svc-card:hover{border-color: var(--line-lime);transform: translateY(-2px)}}.svc-card.open{border-color: var(--line-lime);background: linear-gradient(170deg,rgba(167,223,87,0.07),rgba(14,18,13,0.86) 45%)}.svc-img{position: relative;margin: calc(var(--pad) * -1) calc(var(--pad) * -1) 6px;aspect-ratio: 16 / 9;overflow: hidden;border-radius: calc(var(--r-lg) - 1px) calc(var(--r-lg) - 1px) 0 0;background: var(--raise)}.svc-img img{width: 100%;height: 100%;object-fit: cover;transition: transform 0.7s cubic-bezier(0.2,0.7,0.2,1)}.svc-img::after{content: "";position: absolute;inset: auto 0 0;height: 42%;background: linear-gradient(to bottom,transparent,rgba(14,18,13,0.94));pointer-events: none}@media (hover: hover){.svc-card:hover .svc-img img{transform: scale(1.03)}}.svc-top{display: flex;align-items: baseline;gap: 14px}.svc-card .n{font-family: var(--f-mono);font-size: 0.85rem;color: var(--lime);letter-spacing: 0.06em;flex: none}.svc-card h3{font-size: clamp(1.35rem,0.95rem + 1.3vw,2.2rem);text-transform: uppercase;letter-spacing: -0.04em;line-height: 1;color: #fff;text-shadow: 0 0 28px rgba(255,255,255,0.18)}.svc-d{margin: 0;color: rgba(240,243,235,0.86);font-size: 1.06rem;max-width: 44ch}.svc-toggle{justify-self: start;display: inline-flex;align-items: center;gap: 12px;margin-top: 4px;padding: 8px 8px 8px 18px;border: 1px solid var(--line);border-radius: 999px;background: transparent;color: var(--fg);font: 600 0.95rem/1 var(--f-body);cursor: pointer;transition: background 0.25s,color 0.25s,border-color 0.25s}.svc-toggle .pm{position: relative;width: 32px;height: 32px;border-radius: 50%;background: var(--lime);flex: none;transition: transform 0.35s ease,background 0.25s}.svc-toggle .pm::before,.svc-toggle .pm::after{content: "";position: absolute;left: 50%;top: 50%;width: 12px;height: 2px;margin: -1px 0 0 -6px;border-radius: 2px;background: var(--on-lime)}.svc-toggle .pm::after{transform: rotate(90deg)}@media (hover: hover){.svc-card:hover .svc-toggle{border-color: var(--line-lime)}}.svc-toggle[aria-expanded="true"]{background: var(--lime);color: var(--on-lime);border-color: var(--lime)}.svc-toggle[aria-expanded="true"] .pm{background: var(--on-lime);transform: rotate(135deg)}.svc-toggle[aria-expanded="true"] .pm::before,.svc-toggle[aria-expanded="true"] .pm::after{background: var(--lime)}.svc-toggle:focus-visible{outline: 2px solid var(--lime);outline-offset: 3px}.svc-more{display: grid;grid-template-rows: 0fr;transition: grid-template-rows 0.45s cubic-bezier(0.2,0.7,0.2,1)}.svc-more>div{min-height: 0;overflow: hidden;visibility: hidden;transition: visibility 0s linear 0.45s}.svc-card.open .svc-more{grid-template-rows: 1fr}.svc-card.open .svc-more>div{visibility: visible;transition-delay: 0s}.svc-more ul{list-style: none;margin: 0;padding: 14px 0 2px;display: grid;grid-template-columns: repeat(2,minmax(0,1fr));gap: 0 20px}.svc-more li{position: relative;padding: 10px 0 10px 26px;border-top: 1px solid var(--line);font-size: 0.98rem}.svc-more li::before{content: "";position: absolute;left: 2px;top: 1.05em;width: 12px;height: 7px;border: solid var(--lime);border-width: 0 0 2px 2px;transform: rotate(-45deg)}@media (max-width: 1040px) and (min-width: 761px),(max-width: 480px){.svc-more ul{grid-template-columns: 1fr}}@media (prefers-reduced-motion: reduce){.svc-more,.svc-more>div,.svc-toggle .pm,.svc-img img{transition: none}}.lead-grid{display: grid;grid-template-columns: minmax(0,1.4fr) minmax(0,1fr);gap: 16px;align-items: stretch}@media (max-width: 960px){.lead-grid{grid-template-columns: 1fr}}.punch-card{border-radius: var(--r-lg);background: var(--fg);color: var(--on-lime);border: 1px solid #fff;box-shadow: 0 0 0 1px rgba(255,255,255,0.08),0 18px 50px -24px rgba(255,255,255,0.35);padding: clamp(20px,2.6vw,34px);display: grid;gap: 0.9rem;align-content: center;align-self: center}.punch{margin: 0;font-family: var(--f-head);font-weight: 800;letter-spacing: -0.03em;line-height: 1.12;font-size: clamp(1.3rem,0.95rem + 1.05vw,2rem);text-wrap: balance}.punch em{font-style: normal;background: var(--lime);color: var(--on-lime);padding: 0 0.14em;margin-inline: -0.02em -0.06em;border-radius: 6px;-webkit-box-decoration-break: clone;box-decoration-break: clone}.punch-card .verdict{margin: 0;padding-top: 0.9rem;border-top: 1px solid rgba(10,18,5,0.12);color: var(--on-lime-mute);font-size: 0.98rem;line-height: 1.45;min-height: 0}.punch-card .verdict em{color: var(--on-lime);font-weight: 800;font-style: normal}.audit-card{position: relative;overflow: hidden;isolation: isolate;display: grid;grid-template-columns: minmax(0,1fr) minmax(0,1fr);gap: clamp(32px,5vw,80px);padding: clamp(24px,4.4vw,64px);border-radius: var(--r-lg);border: 1px solid var(--line-lime);background: radial-gradient(90% 70% at 0% 100%,rgba(120,196,48,0.16),transparent 60%),var(--card)}.audit-card h2{font-size: clamp(2rem,1.1rem + 3vw,4rem)}.audit-card .btn{justify-self: start;margin-top: 0.4rem}@media (max-width: 920px){.audit-card{grid-template-columns: 1fr}}.audit-media{position: absolute;inset: 0;z-index: -1;pointer-events: none}.audit-media video{width: 100%;height: 100%;object-fit: cover;object-position: 50% 60%;opacity: 0.6;transition: opacity 0.8s ease}.audit-media.off video{opacity: 0}.audit-media::after{content: "";position: absolute;inset: 0;background: linear-gradient(90deg,rgba(17,22,16,0.55),rgba(17,22,16,0.15) 50%,rgba(17,22,16,0.5))}@media (max-width: 920px){.audit-media{bottom: auto;aspect-ratio: 4 / 3;-webkit-mask-image: linear-gradient(to bottom,#000 55%,transparent);mask-image: linear-gradient(to bottom,#000 55%,transparent)}.audit-media::after{background: rgba(17,22,16,0.3)}}.chips{display: flex;flex-wrap: wrap;gap: 0.5rem}.chips span{font-family: var(--f-mono);font-size: var(--t-label);letter-spacing: 0.08em;text-transform: uppercase;color: var(--mute);border: 1px solid var(--line);border-radius: 999px;padding: 0.45rem 0.8rem}.ticks{list-style: none;margin: 0;padding: 0}.ticks li{display: grid;grid-template-columns: 34px minmax(0,1fr);gap: 0 1rem;padding-block: 1.3rem;border-top: 1px solid var(--line)}.ticks li:first-child{border-top: 0;padding-top: 0}.ticks .ic{width: 34px;height: 34px;border-radius: 50%;display: grid;place-items: center;background: var(--lime);color: var(--on-lime)}.ticks .ic svg{width: 16px;height: 16px}.ticks h3{font-size: var(--t-h3);padding-top: 0.2rem}.ticks p{grid-column: 2;margin-top: 0.35rem;color: var(--mute);max-width: 54ch}.about-grid{display: grid;grid-template-columns: minmax(0,5fr) minmax(0,7fr);gap: clamp(36px,6vw,96px);align-items: center}@media (max-width: 920px){.about-grid{grid-template-columns: 1fr}}.photo{position: relative;margin: 0;border-radius: var(--r-lg);aspect-ratio: 557 / 672;width: 100%;max-width: 500px;background: var(--raise);isolation: isolate}.photo img{display: block;width: 100%;height: 100%;object-fit: cover;border-radius: inherit}.photo picture{border-radius: inherit}.photo::before{content: "";position: absolute;inset: 0;z-index: -1;border-radius: inherit;pointer-events: none;box-shadow: 0 0 0 1px rgba(255,255,255,0.4),0 0 20px 2px rgba(255,255,255,0.26),0 0 60px 8px rgba(255,255,255,0.14),0 0 130px 18px rgba(255,255,255,0.06);opacity: 0.3;transition: opacity 1.6s ease;will-change: opacity}.photo.lit::before{opacity: 1;animation: photo-glow 5s ease-in-out 1.6s infinite alternate}@keyframes photo-glow{to{opacity: 0.62}}@media (prefers-reduced-motion: reduce){.photo::before{opacity: 0.85;transition: none}.photo.lit::before{animation: none}}.photo figcaption{position: absolute;left: 14px;right: 14px;bottom: 14px;display: flex;justify-content: space-between;align-items: center;gap: 1rem;padding: 12px 16px;border-radius: 999px;background: rgba(8,10,8,0.7);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px)}.photo figcaption b{font-family: var(--f-head);font-size: 0.95rem}.photo figcaption span{font-family: var(--f-mono);font-size: var(--t-label);color: var(--lime);letter-spacing: 0.08em}.about h2{font-size: var(--t-h2)}.about .stack p{color: var(--mute);max-width: 58ch}.about .stack strong{color: var(--fg);font-weight: 700}.about .btn{justify-self: start;margin-top: 0.4rem}.cases{margin-top: clamp(64px,8vw,112px);scroll-margin-top: 90px}.cases-head{display: grid;gap: 0.9rem;margin-bottom: clamp(24px,3vw,36px)}.cases-head h3{font-size: clamp(1.9rem,1.1rem + 2.8vw,3.6rem);text-transform: uppercase;letter-spacing: -0.045em;line-height: 0.98}.cases-head h3 em{font-style: normal;color: var(--lime)}.case-grid{display: grid;grid-template-columns: repeat(3,minmax(0,1fr));gap: 12px}@media (max-width: 1100px){.case-grid{grid-template-columns: repeat(2,minmax(0,1fr))}}.case{--pad: clamp(20px,2.2vw,28px);display: grid;grid-template-rows: auto auto auto 1fr;gap: 18px;padding: var(--pad);border: 1px solid var(--line);border-radius: var(--r-lg);background: rgba(14,18,13,0.82);min-width: 0;transition: border-color 0.2s,transform 0.2s}@media (hover: hover){.case:hover{border-color: var(--line-lime);transform: translateY(-2px)}}.case-img{position: relative;margin: calc(var(--pad) * -1) calc(var(--pad) * -1) 0;aspect-ratio: 4 / 3;overflow: hidden;border-radius: calc(var(--r-lg) - 1px) calc(var(--r-lg) - 1px) 0 0;background: var(--raise)}.case-img img{width: 100%;height: 100%;object-fit: cover;transition: transform 0.7s cubic-bezier(0.2,0.7,0.2,1)}.case-img::after{content: "";position: absolute;inset: auto 0 0;height: 38%;background: linear-gradient(to bottom,transparent,rgba(14,18,13,0.82));pointer-events: none}@media (hover: hover){.case:hover .case-img img{transform: scale(1.04)}}.case-cta{grid-template-rows: auto auto 1fr;align-content: start;text-decoration: none;color: var(--fg);border-color: var(--line-lime);background: linear-gradient(160deg,rgba(167,223,87,0.12),rgba(14,18,13,0.82) 55%)}.case-cta h3{font-size: clamp(1.6rem,1.2rem + 1.2vw,2.4rem);line-height: 1.02;letter-spacing: -0.04em}.case-cta h3 em{font-style: normal;color: var(--lime)}.case-cta p{margin: 0;color: var(--mute);max-width: 36ch}.case-cta .btn{align-self: end;justify-self: start}.case-grid .case-cta{grid-column: 1 / -1;grid-template-columns: minmax(0,1fr) auto;grid-template-rows: auto auto;column-gap: 2rem;align-items: center}.case-grid .case-cta h3{grid-column: 1}.case-grid .case-cta p{grid-column: 1}.case-grid .case-cta .btn{grid-column: 2;grid-row: 1 / span 2;align-self: center}@media (max-width: 760px){.case-grid .case-cta{grid-template-columns: 1fr;grid-template-rows: none;row-gap: 18px}.case-grid .case-cta .btn{grid-column: 1;grid-row: auto;justify-self: start}}@media (prefers-reduced-motion: reduce){.case-img img{transition: none}.case:hover .case-img img{transform: none}}.case header{display: grid;gap: 0.35rem}.case h3{font-size: clamp(1.25rem,1.1rem + 0.5vw,1.55rem);text-transform: uppercase;letter-spacing: -0.03em}.case .loc{font-family: var(--f-mono);font-size: var(--t-label);letter-spacing: 0.1em;text-transform: uppercase;color: var(--mute)}.case-hl{display: grid;gap: 0.2rem;margin: 0;padding-bottom: 16px;border-bottom: 1px solid var(--line)}.case-hl b{font-family: var(--f-head);font-weight: 800;font-size: clamp(2.6rem,2rem + 2vw,3.7rem);line-height: 1;letter-spacing: -0.05em;color: var(--lime)}.case-hl span{font-family: var(--f-mono);font-size: var(--t-label);letter-spacing: 0.14em;text-transform: uppercase;color: var(--mute)}.case dl{margin: 0;display: grid;align-content: start}.case dl div{display: flex;justify-content: space-between;align-items: baseline;gap: 1rem;padding: 9px 0;border-bottom: 1px solid var(--line)}.case dl div:last-child{border-bottom: 0}.case dt{color: var(--mute);font-size: 0.9rem}.case dd{margin: 0;font-weight: 700;color: var(--fg);white-space: nowrap;font-variant-numeric: tabular-nums}@media (max-width: 600px){.svc-grid,.case-grid{gap: 8px}.svc-card,.case{--pad: 12px;border-radius: 18px;grid-template-columns: minmax(0,1fr)}.svc-img,.case-img{border-radius: 17px 17px 0 0}.svc-card{gap: 9px}.svc-img{margin-bottom: 0}.svc-top{display: grid;gap: 4px}.svc-card .n{font-size: 0.68rem}.svc-card h3{font-size: 1rem;letter-spacing: -0.02em;line-height: 1.05;overflow-wrap: anywhere;-webkit-hyphens: auto;hyphens: auto}.svc-d{font-size: 0.8rem;line-height: 1.42}.svc-toggle{gap: 8px;margin-top: 0;padding: 4px 4px 4px 11px;font-size: 0.74rem}.svc-toggle .pm{width: 24px;height: 24px}.svc-toggle .pm::before,.svc-toggle .pm::after{width: 10px;margin-left: -5px}.svc-more ul{grid-template-columns: 1fr;padding-top: 8px}.svc-more li{padding: 7px 0 7px 17px;font-size: 0.78rem;line-height: 1.35}.svc-more li::before{left: 1px;top: 0.95em;width: 8px;height: 5px;border-width: 0 0 1.5px 1.5px}.case{gap: 10px}.case header{gap: 0.2rem}.case header h3{font-size: 0.92rem;text-transform: none;letter-spacing: -0.02em;line-height: 1.1;overflow-wrap: anywhere;-webkit-hyphens: auto;hyphens: auto}.case .loc{font-size: 0.58rem;letter-spacing: 0.06em}.case-hl{gap: 0.1rem;padding-bottom: 10px}.case-hl b{font-size: 1.9rem}.case-hl span{font-size: 0.58rem;letter-spacing: 0.08em}.case dl div{display: grid;gap: 1px;padding: 6px 0}.case dt{font-size: 0.7rem;line-height: 1.25}.case dd{font-size: 0.9rem}.case-grid .case-cta{--pad: 20px;border-radius: var(--r-lg)}.case-grid .case-cta .btn{white-space: normal;max-width: 100%}}.fit-grid{display: grid;grid-template-columns: minmax(0,1fr) minmax(0,1fr);gap: 16px}.fit-card{border: 1px solid var(--line);border-radius: var(--r-lg);padding: clamp(24px,3.4vw,44px);display: grid;gap: 1.4rem;align-content: start;min-width: 0;background: var(--raise)}.fit-card.yes{border-color: var(--line-lime);background: linear-gradient(160deg,var(--lime-wash),var(--raise) 70%)}.fit-card h3{font-size: clamp(1.3rem,1.1rem + 0.8vw,1.8rem);text-transform: uppercase;letter-spacing: -0.035em}.fit-card ul{list-style: none;margin: 0;padding: 0;display: grid;gap: 1rem}.fit-card li{display: grid;grid-template-columns: 22px minmax(0,1fr);gap: 0.8rem;color: var(--mute)}.fit-card li svg{width: 18px;height: 18px;margin-top: 0.22rem}.fit-card.yes li svg{color: var(--lime)}.fit-card.no li svg{color: var(--dim)}@media (max-width: 720px){.fit-grid{grid-template-columns: 1fr}}.bridge{position: relative;width: 100%;height: clamp(300px,56.25vw,860px);margin-bottom: calc(clamp(70px,10vw,200px) * -1);pointer-events: none}.bridge img{position: absolute;inset: 0;width: 100%;height: 100%;object-fit: cover;object-position: 50% 40%;-webkit-mask-image: linear-gradient(to right,transparent,#000 16%,#000 84%,transparent),linear-gradient(to bottom,transparent,#000 18%,#000 66%,transparent);-webkit-mask-composite: source-in;mask-image: linear-gradient(to right,transparent,#000 16%,#000 84%,transparent),linear-gradient(to bottom,transparent,#000 18%,#000 66%,transparent);mask-composite: intersect}@media (max-width: 760px){.bridge img{-webkit-mask-image: linear-gradient(to right,transparent,#000 10%,#000 90%,transparent),linear-gradient(to bottom,transparent,#000 14%,#000 70%,transparent);mask-image: linear-gradient(to right,transparent,#000 10%,#000 90%,transparent),linear-gradient(to bottom,transparent,#000 14%,#000 70%,transparent)}}.bridge + .final{border-top: 0}.final{position: relative;overflow: hidden;padding-block: var(--section);border-top: 1px solid var(--line);scroll-margin-top: 40px}.final-head{position: relative}.final-art{position: absolute;right: 0;top: -26%;height: 150%;aspect-ratio: 760 / 1258;pointer-events: none;mix-blend-mode: screen}.final-art img{width: 100%;height: 100%;object-fit: contain;animation: float 12s ease-in-out infinite}@media (max-width: 640px){.final-head{display: grid;grid-template-columns: minmax(0,1fr) 30vw;align-items: center;gap: 0}.final-head .giant{font-size: min(var(--t-giant),10.2vw)}.final-art{position: relative;top: auto;right: auto;height: auto;width: 100%}}.giant{font-size: var(--t-giant);line-height: 0.94;margin-block: clamp(20px,3vw,32px) clamp(28px,4vw,48px);max-width: 11ch}.final-row{display: grid;grid-template-columns: minmax(0,1fr) auto;gap: 1rem 3rem;align-items: end}.final .choose{color: var(--fg);font-weight: 600}@media (max-width: 820px){.final-row{grid-template-columns: 1fr}}.foot{border-top: 1px solid var(--line);padding-top: clamp(48px,6vw,80px);overflow: hidden}.foot-grid{display: grid;grid-template-columns: minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);gap: 2rem 3rem}.foot-col{display: grid;gap: 0.7rem;align-content: start;min-width: 0}.foot-col p{color: var(--mute);max-width: 36ch;font-size: var(--t-small)}.foot-col a:not(.brand){color: var(--mute);text-decoration: none;font-size: 0.92rem}@media (hover: hover){.foot-col a:not(.brand):hover{color: var(--lime)}}.foot-col .label{margin-bottom: 0.3rem}@media (max-width: 720px){.foot-grid{grid-template-columns: 1fr 1fr}.foot-col:first-child{grid-column: 1 / -1}}.wordmark{font-family: var(--f-head);font-weight: 800;font-size: min(18vw,15.4rem);letter-spacing: -0.065em;line-height: 1;white-space: nowrap;margin-top: clamp(40px,6vw,80px);background: linear-gradient(180deg,var(--fg) 10%,rgba(240,243,235,0.06) 92%);-webkit-background-clip: text;background-clip: text;color: transparent;user-select: none;padding-bottom: 0.06em}.wordmark b{font-weight: 800;color: var(--lime);-webkit-text-fill-color: var(--lime)}.foot-base{display: flex;flex-wrap: wrap;justify-content: space-between;gap: 0.5rem 2rem;padding-block: 20px 28px;border-top: 1px solid var(--line)}.foot-base p{color: var(--dim);font-size: 0.8rem}.calc{background: radial-gradient(120% 90% at 0% 100%,rgba(120,196,48,0.16),transparent 60%),var(--card);border: 1px solid var(--line-lime);border-radius: var(--r-lg);padding: clamp(18px,3vw,34px);box-shadow: 0 30px 80px -40px rgba(0,0,0,0.8)}.calc-cols{display: grid;grid-template-columns: minmax(0,1fr) minmax(0,1fr)}.camp{display: grid;gap: 1.1rem;align-content: start;padding-right: clamp(12px,2.4vw,26px);min-width: 0}.camp + .camp{padding-right: 0;padding-left: clamp(12px,2.4vw,26px);border-left: 1px solid var(--line)}.camp-h{display: flex;align-items: center;min-height: 20px}.label{font-family: var(--f-mono);font-size: 0.68rem;letter-spacing: 0.16em;text-transform: uppercase;color: var(--dim)}.badge{font-family: var(--f-mono);font-size: 0.64rem;letter-spacing: 0.1em;text-transform: uppercase;padding: 0.25rem 0.55rem;border-radius: 999px;background: var(--lime);color: var(--on-lime)}.field-in{display: grid;gap: 0.3rem}.field-in .row{display: flex;align-items: baseline;gap: 0.35rem;border-bottom: 1px solid var(--line);padding-bottom: 0.3rem;transition: border-color 0.15s}.field-in .row:focus-within{border-color: var(--lime)}.field-in input{width: 100%;min-width: 0;flex: 1;background: transparent;border: 0;color: var(--fg);font-family: var(--f-head);font-weight: 800;font-size: clamp(1.3rem,1rem + 1.2vw,1.8rem);letter-spacing: -0.03em;padding: 0;font-variant-numeric: tabular-nums;-moz-appearance: textfield}.field-in input:focus{outline: none}.field-in input::-webkit-outer-spin-button,.field-in input::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0}.field-in i{font-style: normal;color: var(--mute);font-size: 0.9rem;white-space: nowrap}.yield{display: grid;gap: 0.15rem;color: var(--mute);font-size: 0.92rem;font-variant-numeric: tabular-nums}.yield b{color: var(--fg);font-weight: 600}.cps{display: grid;gap: 0.25rem;padding-top: 0.9rem;border-top: 1px solid var(--line)}.cps output{font-family: var(--f-head);font-weight: 800;font-size: clamp(1.6rem,1.1rem + 2vw,2.5rem);letter-spacing: -0.04em;line-height: 1;font-variant-numeric: tabular-nums;transition: color 0.2s}.camp.win .cps output{color: var(--lime)}.cps .badge{justify-self: start;margin-top: 0.45rem}.budget{margin-top: clamp(20px,3vw,28px);padding-top: 1.1rem;border-top: 1px solid var(--line);display: grid;grid-template-columns: auto minmax(0,1fr) auto;align-items: center;gap: 1rem}.budget output{font-family: var(--f-head);font-weight: 800;font-size: 1.15rem;font-variant-numeric: tabular-nums;min-width: 5.5ch;text-align: right}.budget input[type="range"]{width: 100%;accent-color: var(--lime)}@media (max-width: 460px){.budget{grid-template-columns: 1fr auto}.budget input[type="range"]{grid-column: 1 / -1;grid-row: 2}}.verdict{margin-top: 1rem;color: var(--mute);font-size: 0.95rem;min-height: 3em}.verdict em{font-weight: 700}.gate{position: fixed;inset: 0;z-index: 100;background: var(--bg);display: grid;place-items: center;overflow-y: auto;padding: calc(env(safe-area-inset-top,0px) + 24px) var(--gutter-r) calc(env(safe-area-inset-bottom,0px) + 24px) var(--gutter)}.gate[hidden]{display: none !important}.gate{background: #000}.gate{isolation: isolate}.gate-in{width: min(100%,420px);display: grid;gap: 14px}.gate-head{display: grid;justify-items: center;text-align: center;gap: 4px;margin-bottom: clamp(16px,3.4vh,30px)}.gate-av{width: 112px;height: 112px;border-radius: 50%;object-fit: cover;margin-bottom: 14px;background: #0c0c0c;box-shadow: 0 0 0 1px rgba(255,255,255,0.14)}.gate-brand{font-family: var(--f-head);font-weight: 700;font-size: 1.35rem;text-transform: none;letter-spacing: -0.03em;line-height: 1.1}.gate-brand b{color: var(--lime);font-weight: 800}.gate-sub{margin: 0;font-size: 0.9rem;color: var(--mute)}.gate-label{justify-self: center;font-family: var(--f-mono);font-size: var(--t-label);letter-spacing: 0.12em;text-transform: uppercase;color: var(--dim)}.gate-opts{display: grid;gap: 10px}.opt{display: flex;align-items: center;gap: 14px;width: 100%;min-height: 60px;padding: 12px 16px;border-radius: 16px;border: 1px solid var(--line);background: rgba(255,255,255,0.025);color: var(--fg);font: inherit;text-align: left;text-decoration: none;cursor: pointer;-webkit-tap-highlight-color: transparent;transition: border-color 0.18s,background 0.18s,transform 0.18s}.opt .code{flex: none;width: 3.4em;font-family: var(--f-mono);font-size: 0.74rem;font-weight: 500;letter-spacing: 0.1em;color: var(--mute)}.opt .name{flex: 1;font-weight: 600;font-size: 1.02rem;letter-spacing: -0.01em}.opt .tick{flex: none;width: 22px;height: 22px;border-radius: 50%;border: 1.5px solid rgba(236,244,226,0.22);display: grid;place-items: center;color: transparent;transition: background 0.18s,border-color 0.18s,color 0.18s}.opt .tick svg{width: 13px;height: 13px}.opt:focus-visible{border-color: rgba(255,255,255,0.4);outline: none}@media (hover: hover){.opt:hover{border-color: rgba(255,255,255,0.4)}}.opt:active{transform: scale(0.985)}.opt.rec{border-color: rgba(255,255,255,0.26);background: rgba(255,255,255,0.06)}.opt.rec .tick,.opt:focus-visible .tick{background: var(--lime);border-color: var(--lime);color: var(--on-lime)}@media (hover: hover){.opt:hover .tick{background: var(--lime);border-color: var(--lime);color: var(--on-lime)}}.final-card .eyebrow{margin-bottom: 1.2rem}.final-card .choose{margin-top: clamp(28px,4vw,40px);color: var(--fg);font-weight: 600}.contacts{display: grid;grid-template-columns: repeat(4,minmax(0,1fr));gap: 12px;margin-top: 1rem}@media (max-width: 1100px){.contacts{grid-template-columns: repeat(2,minmax(0,1fr))}}@media (max-width: 560px){.contacts{grid-template-columns: 1fr}}.contact{display: grid;grid-template-columns: 44px minmax(0,1fr);grid-template-rows: auto auto 1fr;gap: 0.25rem 1rem;align-items: center;padding: 20px;border-radius: var(--r);border: 1px solid var(--line);background: rgba(8,10,8,0.55);color: var(--fg);text-decoration: none;transition: border-color 0.18s,transform 0.18s,background 0.18s;min-width: 0}@media (hover: hover){a.contact:hover{border-color: var(--lime);transform: translateY(-2px);background: rgba(8,10,8,0.75)}}.contact .ic{grid-row: span 2;width: 44px;height: 44px;border-radius: 14px;display: grid;place-items: center;background: var(--lime);color: var(--on-lime)}.contact .ic svg{width: 22px;height: 22px}.contact .ic{background: none;border-radius: 0}.contact .ic img{width: 44px;height: 44px;display: block}.contact b{font-family: var(--f-head);font-weight: 700;font-size: 1.05rem;letter-spacing: -0.01em}.contact .v{font-family: var(--f-mono);font-size: 0.76rem;color: var(--mute);overflow-wrap: anywhere}.contact .act{grid-column: 1 / -1;align-self: end;margin-top: 0.75rem;padding-top: 0.75rem;border-top: 1px solid var(--line);display: flex;justify-content: space-between;align-items: center;font-weight: 600;font-size: 0.92rem;color: var(--lime)}.contact .act svg{width: 18px;height: 18px;transition: transform 0.18s}@media (hover: hover){a.contact:hover .act svg{transform: translateX(3px)}}.contact.soon{border-style: dashed;background: transparent}.contact.soon .ic{opacity: 0.45}.contact.soon .act{color: var(--dim)}@media (prefers-reduced-motion: reduce){html{scroll-behavior: auto}*,*::before,*::after{transition: none !important;animation: none !important}}</style>
+<meta name="description" content="Publicidad para negocios en Meta y Google, creativos con IA, estrategia, webs, landing pages y chatbots. Reserva una consulta.">
+<meta name="theme-color" content="#080a08">
+<link rel="canonical" href="https://melngrow.com/es/">
+<link rel="alternate" hreflang="es" href="https://melngrow.com/es/"><link rel="alternate" hreflang="uk" href="https://melngrow.com/ua/"><link rel="alternate" hreflang="ru" href="https://melngrow.com/ru/"><link rel="alternate" hreflang="en" href="https://melngrow.com/en/"><link rel="alternate" hreflang="x-default" href="https://melngrow.com/">
+<meta property="og:title" content="meln.grow · Anton Melnykov · Publicidad en Meta y Google">
+<meta property="og:description" content="Publicidad para negocios en Meta y Google, creativos con IA, estrategia, webs, landing pages y chatbots. Reserva una consulta.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="meln.grow">
+<meta property="og:url" content="https://melngrow.com/es/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://melngrow.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><picture><source type="image/avif" srcset="../assets/bg-640.avif 640w, ../assets/bg-960.avif 960w, ../assets/bg-1280.avif 1280w" sizes="(max-aspect-ratio: 4/5) 100vw, 80vh"><img src="../assets/bg-960.webp" alt="" width="1280" height="1600" fetchpriority="high"></picture></div>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="#top" aria-label="meln.grow">meln<b>.</b>grow</a>
+<nav class="nav" aria-label="Menu">
+<a href="#services" data-t="nav.services">Servicios</a>
+<a href="#audit" data-t="nav.audit">Auditoría</a>
+<a href="#cases" data-t="nav.cases">Casos</a>
+</nav>
+<span class="spacer"></span>
+<nav class="lang" aria-label="Idioma · Мова · Язык · Language"><a href="../es/" hreflang="es" lang="es" data-setlang="es" aria-current="page">ES</a><a href="../ua/" hreflang="uk" lang="uk" data-setlang="ua">UA</a><a href="../ru/" hreflang="ru" lang="ru" data-setlang="ru">RU</a><a href="../en/" hreflang="en" lang="en" data-setlang="en">EN</a></nav>
+<a class="btn sm" href="#contact"><span data-t="cta.short">Consulta</span><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+<div class="hero-art" aria-hidden="true"><picture><source type="image/avif" srcset="../assets/knight-640.avif 640w, ../assets/knight-960.avif 960w, ../assets/knight-1300.avif 1300w" sizes="(max-width: 760px) 112vw, min(60vw, 860px)"><img src="../assets/knight-960.webp" alt="" width="1300" height="1272" fetchpriority="high"></picture></div>
+<div class="wrap">
+<div class="hero-meta">
+<span class="who"><picture><source type="image/avif" srcset="../assets/anton-80.avif 80w, ../assets/anton-120.avif 120w" sizes="40px"><img src="../assets/anton-120.webp" alt="Anton Melnykov" data-t-alt="about.alt" width="40" height="40"></picture><b>Anton Melnykov</b></span>
+<span class="kicker" data-t="hero.kicker">Publicidad orientada a resultados · Meta &amp; Google</span>
+</div>
+<h1 data-t="hero.title">¿Cuántos clientes estás perdiendo <em>sin darte cuenta?</em></h1>
+<div class="hero-foot">
+<div class="hero-copy">
+<div class="guarantee"><span class="g-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l7.5 2.9v5.6c0 4.6-3.1 8.4-7.5 9.9-4.4-1.5-7.5-5.3-7.5-9.9V5.7z"/><path d="M8.6 12.1l2.4 2.4 4.4-4.6"/></svg></span><p data-t="hero.sub">Aumento entre un <mark>50 y un 350 %</mark> las solicitudes de clientes potenciales o te devuelvo el dinero del servicio*.</p></div>
+<p class="terms" data-t="hero.terms">* Las condiciones de la garantía, el periodo de comparación y qué cuenta como solicitud de calidad se fijan por contrato antes de empezar.</p>
+</div>
+<div class="hero-cta">
+<a class="btn" href="#contact"><span data-t="hero.cta">Reservar una consulta</span><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<a class="btn ghost" href="#services" data-t="hero.cta2">Ver servicios</a>
+<p class="note" data-t="hero.note">Te respondo yo, personalmente.</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+<div class="track">
+<div class="group"><span class="item" data-t="s1.t">Estrategia publicitaria</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s2.t">Web que vende y automatización</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s3.t">Creatividades publicitarias</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s4.t">Auditoría publicitaria</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s1.t">Estrategia publicitaria</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s2.t">Web que vende y automatización</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s3.t">Creatividades publicitarias</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s4.t">Auditoría publicitaria</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg></div><div class="group"><span class="item" data-t="s1.t">Estrategia publicitaria</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s2.t">Web que vende y automatización</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s3.t">Creatividades publicitarias</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s4.t">Auditoría publicitaria</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s1.t">Estrategia publicitaria</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s2.t">Web que vende y automatización</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s3.t">Creatividades publicitarias</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg><span class="item" data-t="s4.t">Auditoría publicitaria</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z"/></svg></div>
+</div>
+</div>
+
+<section class="stats-sec">
+<div class="wrap">
+<div class="stats">
+<div class="stat"><b data-t="stat1.n">2+ años</b><span data-t="stat1.l">de experiencia en publicidad online</span></div>
+<div class="stat"><b data-t="stat2.n">ROAS 25×</b><span data-t="stat2.l">mejor resultado: sushi en Varsovia</span></div>
+<div class="stat stat-text"><p data-t="stat3.t">Resultados ya en los primeros días tras el lanzamiento</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="services">
+<div class="wrap">
+<div class="sec-head">
+<span class="tag"><i>01</i><span data-t="svc.eyebrow">Servicios</span></span>
+<h2 data-t="svc.title">Todo lo que necesita tu publicidad <em>para vender.</em></h2>
+</div>
+<div class="svc-grid">
+<article class="svc-card">
+<figure class="svc-img"><picture><source type="image/avif" srcset="../assets/services/ads-480.avif 480w, ../assets/services/ads-800.avif 800w, ../assets/services/ads-1280.avif 1280w" sizes="(max-width: 1412px) 46vw, 650px"><img src="../assets/services/ads-800.webp" alt="" width="1280" height="720" loading="lazy" decoding="async"></picture></figure>
+<div class="svc-top"><span class="n">01</span><h3 data-t="s1.t">Estrategia publicitaria</h3></div>
+<p class="svc-d" data-t="s1.d">Configuración de publicidad que ayuda a atraer clientes potenciales.</p>
+<button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc1-more"><span data-t="svc.more">Qué incluye</span><span class="pm" aria-hidden="true"></span></button>
+<div class="svc-more" id="svc1-more"><div><ul data-t="s1.l"><li>Meta Ads (Instagram, Facebook)</li><li>Google Ads</li><li>Análisis de mercado y competencia</li><li>Estrategia publicitaria</li><li>Configuración y lanzamiento de campañas</li><li>Analítica y optimización</li></ul></div></div>
+</article>
+<article class="svc-card">
+<figure class="svc-img"><picture><source type="image/avif" srcset="../assets/services/web-480.avif 480w, ../assets/services/web-800.avif 800w, ../assets/services/web-1280.avif 1280w" sizes="(max-width: 1412px) 46vw, 650px"><img src="../assets/services/web-800.webp" alt="" width="1280" height="720" loading="lazy" decoding="async"></picture></figure>
+<div class="svc-top"><span class="n">02</span><h3 data-t="s2.t">Web que vende y automatización</h3></div>
+<p class="svc-d" data-t="s2.d">Creación de herramientas que ayudan a convertir visitas en clientes.</p>
+<button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc2-more"><span data-t="svc.more">Qué incluye</span><span class="pm" aria-hidden="true"></span></button>
+<div class="svc-more" id="svc2-more"><div><ul data-t="s2.l"><li>Webs para negocios</li><li>Landing pages</li><li>Chatbots</li><li>Automatización de la gestión de solicitudes</li></ul></div></div>
+</article>
+<article class="svc-card">
+<figure class="svc-img"><picture><source type="image/avif" srcset="../assets/services/creative-480.avif 480w, ../assets/services/creative-800.avif 800w, ../assets/services/creative-1280.avif 1280w" sizes="(max-width: 1412px) 46vw, 650px"><img src="../assets/services/creative-800.webp" alt="" width="1280" height="720" loading="lazy" decoding="async"></picture></figure>
+<div class="svc-top"><span class="n">03</span><h3 data-t="s3.t">Creatividades publicitarias</h3></div>
+<p class="svc-d" data-t="s3.d">Creación de materiales publicitarios que captan la atención de clientes potenciales.</p>
+<button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc3-more"><span data-t="svc.more">Qué incluye</span><span class="pm" aria-hidden="true"></span></button>
+<div class="svc-more" id="svc3-more"><div><ul data-t="s3.l"><li>Vídeos publicitarios</li><li>Banners</li><li>Conceptos publicitarios</li><li>Creatividades con IA</li></ul></div></div>
+</article>
+<article class="svc-card">
+<figure class="svc-img"><picture><source type="image/avif" srcset="../assets/services/audit-480.avif 480w, ../assets/services/audit-800.avif 800w, ../assets/services/audit-1280.avif 1280w" sizes="(max-width: 1412px) 46vw, 650px"><img src="../assets/services/audit-800.webp" alt="" width="1280" height="720" loading="lazy" decoding="async"></picture></figure>
+<div class="svc-top"><span class="n">04</span><h3 data-t="s4.t">Auditoría publicitaria</h3></div>
+<p class="svc-d" data-t="s4.d">Revisión de tu publicidad y detección de lo que impide conseguir mejores resultados.</p>
+<button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc4-more"><span data-t="svc.more">Qué incluye</span><span class="pm" aria-hidden="true"></span></button>
+<div class="svc-more" id="svc4-more"><div><ul data-t="s4.l"><li>Análisis de la cuenta publicitaria</li><li>Revisión de las campañas</li><li>Análisis del público objetivo</li><li>Análisis de las creatividades</li><li>Detección de errores</li><li>Recomendaciones de mejora</li></ul></div></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="sec" id="lead">
+<div class="wrap">
+<div class="sec-head row">
+<div class="stack">
+<span class="tag"><i>02</i><span data-t="lead.eyebrow">Coste por lead vs. coste por venta</span></span>
+<h2 data-t="lead.title">Un lead barato puede <em>salirte caro.</em></h2>
+</div>
+<p class="lede" data-t="lead.sub">Un lead barato no siempre trae beneficios. Lo importante no es solo conseguir la solicitud, sino convertirla en una venta.</p>
+</div>
+<div class="lead-grid">
+<form class="calc" id="calc" autocomplete="off">
+<div class="calc-cols">
+<div class="camp" id="campA">
+<div class="camp-h"><span class="label" data-t="calc.a">Campaña A</span></div>
+<label class="field-in"><span class="label" data-t="calc.cpl">Coste por lead</span>
+<span class="row"><input id="cplA" type="number" inputmode="decimal" min="0.1" step="0.5" value="5"><i>€ / lead</i></span></label>
+<label class="field-in"><span class="label" data-t="calc.conv">Leads que compran</span>
+<span class="row"><input id="convA" type="number" inputmode="decimal" min="0" max="100" step="1" value="2"><i>%</i></span></label>
+<div class="yield"><span><b id="leadsA">100</b> <span data-t="calc.leads">leads</span></span><span><b id="salesA">2</b> <span data-t="calc.sales">ventas</span></span></div>
+<div class="cps"><span class="label" data-t="calc.cps">Coste por venta</span><output id="cpsA" for="cplA convA budget">250 €</output><span class="badge" data-t="calc.win" hidden>Más rentable</span></div>
+</div>
+<div class="camp" id="campB">
+<div class="camp-h"><span class="label" data-t="calc.b">Campaña B</span></div>
+<label class="field-in"><span class="label" data-t="calc.cpl">Coste por lead</span>
+<span class="row"><input id="cplB" type="number" inputmode="decimal" min="0.1" step="0.5" value="12.5"><i>€ / lead</i></span></label>
+<label class="field-in"><span class="label" data-t="calc.conv">Leads que compran</span>
+<span class="row"><input id="convB" type="number" inputmode="decimal" min="0" max="100" step="1" value="20"><i>%</i></span></label>
+<div class="yield"><span><b id="leadsB">40</b> <span data-t="calc.leads">leads</span></span><span><b id="salesB">8</b> <span data-t="calc.sales">ventas</span></span></div>
+<div class="cps"><span class="label" data-t="calc.cps">Coste por venta</span><output id="cpsB" for="cplB convB budget">62,50 €</output><span class="badge" data-t="calc.win" hidden>Más rentable</span></div>
+</div>
+</div>
+<div class="budget">
+<label class="label" for="budget" data-t="calc.budget">Mismo presupuesto</label>
+<input id="budget" type="range" min="100" max="5000" step="50" value="500">
+<output id="budgetOut" for="budget">500 €</output>
+</div>
+</form>
+<div class="punch-card">
+<p class="punch" data-t="lead.punch">La publicidad se optimiza para conseguir <em>clientes</em>, no solo leads.</p>
+<p class="verdict" id="verdict" aria-live="polite"></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="audit">
+<div class="wrap">
+<div class="audit-card">
+<div class="audit-media" aria-hidden="true"><video data-poster="../assets/audit-poster.webp" muted playsinline preload="none" disablepictureinpicture disableremoteplayback tabindex="-1"><source src="../assets/audit.webm" type="video/webm"><source src="../assets/audit.mp4" type="video/mp4"></video></div>
+<div class="stack">
+<span class="tag"><i>03</i><span data-t="audit.eyebrow">Auditoría publicitaria</span></span>
+<h2 data-t="audit.title">Una segunda opinión <em>sobre tu publicidad.</em></h2>
+<p class="lede" data-t="audit.sub">¿No te convencen los resultados? Encuentro dónde pierde dinero tu publicidad y te muestro qué corregir para conseguir más solicitudes con el mismo presupuesto.</p>
+<a class="btn" href="#contact"><span data-t="audit.cta">Solicitar auditoría</span><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</div>
+<ul class="ticks">
+<li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h3 data-t="audit.i1.t">A dónde va el presupuesto</h3><p data-t="audit.i1.d">Qué campañas traen solicitudes y cuáles solo gastan dinero.</p></li>
+<li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h3 data-t="audit.i2.t">Por qué los leads salen caros</h3><p data-t="audit.i2.d">Públicos, creatividades y ajustes que encarecen cada lead.</p></li>
+<li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h3 data-t="audit.i3.t">Si las conversiones se miden bien</h3><p data-t="audit.i3.d">Píxel, API de conversiones y conversiones de Google.</p></li>
+<li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h3 data-t="audit.i4.t">Plan de acción</h3><p data-t="audit.i4.d">Qué cambiar primero para ver resultados cuanto antes.</p></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="sec about" id="about">
+<div class="wrap about-grid">
+<figure class="photo">
+<picture><source type="image/avif" srcset="../assets/anton-photo-640.avif 640w, ../assets/anton-photo-900.avif 900w" sizes="(max-width: 548px) calc(100vw - 32px), (max-width: 920px) 500px, min(36.6vw, 500px)"><img src="../assets/anton-photo-900.webp" alt="Anton Melnykov" data-t-alt="about.alt" width="557" height="672" loading="lazy" decoding="async"></picture>
+<figcaption><b>Anton Melnykov</b><span>meln.grow</span></figcaption>
+</figure>
+<div class="stack">
+<span class="tag"><i>04</i><span data-t="about.eyebrow">Quién soy</span></span>
+<h2 data-t="about.title">Hola, soy <em>Anton.</em></h2>
+<p data-t="about.p1">Ayudo a negocios en Europa, Ucrania y otros mercados a atraer clientes potenciales con publicidad en Meta y Google. Me ocupo de todo el proceso: desde el análisis de mercado y la estrategia hasta las creatividades, el lanzamiento de las campañas y la optimización de resultados.</p>
+<p data-t="about.p2">Trabajas directamente conmigo y detrás tengo el respaldo del equipo <strong>Targeting Plus</strong>, con <strong>más de 6 años</strong> en el mercado y <strong>más de 330 000 €</strong> de presupuesto publicitario gestionado en Europa, Ucrania, EE. UU., los Emiratos Árabes Unidos y otros mercados.</p>
+<p data-t="about.p3">Trabajo en <strong>español, ucraniano y ruso</strong>.</p>
+</div>
+</div>
+<div class="wrap cases" id="cases">
+<div class="cases-head">
+<span class="label" data-t="cases.eyebrow">Casos</span>
+<h3 data-t="cases.title">Resultados <em>de mis clientes.</em></h3>
+</div>
+<div class="case-grid">
+<article class="case"><figure class="case-img"><picture><source type="image/avif" srcset="../assets/cases/windows-400.avif 400w, ../assets/cases/windows-800.avif 800w" sizes="(max-width: 1100px) 45vw, (max-width: 1440px) 30vw, 430px"><img src="../assets/cases/windows-800.webp" alt="Ventanas" data-t-alt="k1.t" width="800" height="600" loading="lazy" decoding="async"></picture></figure><header><h3 data-t="k1.t">Ventanas</h3><span class="loc" data-t="k1.p">Barcelona, España</span></header><p class="case-hl"><b data-t="k1.leads">53</b><span data-t="case.leads">Leads</span></p><dl><div><dt data-t="case.cpl">Coste por lead</dt><dd data-t="k1.cpl">8,73 €</dd></div><div><dt data-t="case.conv">Conversión</dt><dd data-t="k1.conv">10 %</dd></div><div><dt data-t="case.budget">Inversión publicitaria</dt><dd data-t="k1.budget">462 €</dd></div></dl></article>
+<article class="case"><figure class="case-img"><picture><source type="image/avif" srcset="../assets/cases/sushi-400.avif 400w, ../assets/cases/sushi-800.avif 800w" sizes="(max-width: 1100px) 45vw, (max-width: 1440px) 30vw, 430px"><img src="../assets/cases/sushi-800.webp" alt="Sushi" data-t-alt="k2.t" width="800" height="600" loading="lazy" decoding="async"></picture></figure><header><h3 data-t="k2.t">Sushi</h3><span class="loc" data-t="k2.p">Varsovia, Polonia</span></header><p class="case-hl"><b data-t="k2.roas">25×</b><span data-t="case.roas">ROAS</span></p><dl><div><dt data-t="case.leads">Leads</dt><dd data-t="k2.leads">353</dd></div><div><dt data-t="case.cpl">Coste por lead</dt><dd data-t="k2.cpl">0,22 €</dd></div><div><dt data-t="case.conv">Conversión</dt><dd data-t="k2.conv">35 %</dd></div><div><dt data-t="case.rev">Facturación</dt><dd data-t="k2.rev">8 648 zł</dd></div><div><dt data-t="case.budget">Inversión publicitaria</dt><dd data-t="k2.budget">79 €</dd></div></dl></article>
+<article class="case"><figure class="case-img"><picture><source type="image/avif" srcset="../assets/cases/pastry-400.avif 400w, ../assets/cases/pastry-800.avif 800w" sizes="(max-width: 1100px) 45vw, (max-width: 1440px) 30vw, 430px"><img src="../assets/cases/pastry-800.webp" alt="Pastelería" data-t-alt="k3.t" width="800" height="600" loading="lazy" decoding="async"></picture></figure><header><h3 data-t="k3.t">Pastelería</h3><span class="loc" data-t="k3.p">Viena, Austria</span></header><p class="case-hl"><b data-t="k3.roas">12,5×</b><span data-t="case.roas">ROAS</span></p><dl><div><dt data-t="case.leads">Leads</dt><dd data-t="k3.leads">180</dd></div><div><dt data-t="case.cpl">Coste por lead</dt><dd data-t="k3.cpl">1,60 €</dd></div><div><dt data-t="case.conv">Conversión</dt><dd data-t="k3.conv">50 %</dd></div><div><dt data-t="case.rev">Facturación</dt><dd data-t="k3.rev">3 600 €</dd></div><div><dt data-t="case.budget">Inversión publicitaria</dt><dd data-t="k3.budget">288 €</dd></div></dl></article>
+<article class="case"><figure class="case-img"><picture><source type="image/avif" srcset="../assets/cases/massage-400.avif 400w, ../assets/cases/massage-800.avif 800w" sizes="(max-width: 1100px) 45vw, (max-width: 1440px) 30vw, 430px"><img src="../assets/cases/massage-800.webp" alt="Masajes" data-t-alt="k4.t" width="800" height="600" loading="lazy" decoding="async"></picture></figure><header><h3 data-t="k4.t">Masajes</h3><span class="loc" data-t="k4.p">Varsovia, Polonia</span></header><p class="case-hl"><b data-t="k4.roas">10,3×</b><span data-t="case.roas">ROAS</span></p><dl><div><dt data-t="case.leads">Leads</dt><dd data-t="k4.leads">140</dd></div><div><dt data-t="case.cpl">Coste por lead</dt><dd data-t="k4.cpl">3,88 zł</dd></div><div><dt data-t="case.conv">Conversión</dt><dd data-t="k4.conv">50 %</dd></div><div><dt data-t="case.check">Ticket medio</dt><dd data-t="k4.check">80 zł</dd></div><div><dt data-t="case.rev">Facturación</dt><dd data-t="k4.rev">5 600 zł</dd></div><div><dt data-t="case.budget">Inversión publicitaria</dt><dd data-t="k4.budget">543,69 zł</dd></div></dl></article>
+<article class="case"><figure class="case-img"><picture><source type="image/avif" srcset="../assets/cases/interior-400.avif 400w, ../assets/cases/interior-800.avif 800w" sizes="(max-width: 1100px) 45vw, (max-width: 1440px) 30vw, 430px"><img src="../assets/cases/interior-800.webp" alt="Muebles" data-t-alt="k5.t" width="800" height="600" loading="lazy" decoding="async"></picture></figure><header><h3 data-t="k5.t">Muebles</h3><span class="loc" data-t="k5.p">Kyiv, Ucrania</span></header><p class="case-hl"><b data-t="k5.roas">17,5×</b><span data-t="case.roas">ROAS</span></p><dl><div><dt data-t="case.leads">Leads</dt><dd data-t="k5.leads">42</dd></div><div><dt data-t="case.cpl">Coste por lead</dt><dd data-t="k5.cpl">7,03 €</dd></div><div><dt data-t="case.conv">Conversión</dt><dd data-t="k5.conv">15 %</dd></div><div><dt data-t="case.check">Ticket medio</dt><dd data-t="k5.check">863 €</dd></div><div><dt data-t="case.rev">Facturación</dt><dd data-t="k5.rev">5 177 €</dd></div><div><dt data-t="case.budget">Inversión publicitaria</dt><dd data-t="k5.budget">295 €</dd></div></dl></article>
+<article class="case"><figure class="case-img"><picture><source type="image/avif" srcset="../assets/cases/pmu-400.avif 400w, ../assets/cases/pmu-800.avif 800w" sizes="(max-width: 1100px) 45vw, (max-width: 1440px) 30vw, 430px"><img src="../assets/cases/pmu-800.webp" alt="Micropigmentación" data-t-alt="k6.t" width="800" height="600" loading="lazy" decoding="async"></picture></figure><header><h3 data-t="k6.t">Micropigmentación</h3><span class="loc" data-t="k6.p">Canadá</span></header><p class="case-hl"><b data-t="k6.eroas">8,89×</b><span data-t="case.eroas">ROAS estimado</span></p><dl><div><dt data-t="case.chats">Conversaciones iniciadas</dt><dd data-t="k6.chats">109</dd></div><div><dt data-t="case.cpchat">Coste por conversación</dt><dd data-t="k6.cpchat">5,32 $</dd></div><div><dt data-t="case.convt">Conversión a cliente</dt><dd data-t="k6.convt">40 %</dd></div><div><dt data-t="case.checkt">Ticket medio</dt><dd data-t="k6.checkt">120 $</dd></div><div><dt data-t="case.erev">Facturación estimada</dt><dd data-t="k6.erev">5 160 $</dd></div><div><dt data-t="case.budget">Inversión publicitaria</dt><dd data-t="k6.budget">580,31 $</dd></div></dl></article>
+<a class="case case-cta" href="#contact"><h3 data-t="cases.cta.t">El próximo caso <em>puede ser el tuyo.</em></h3><p data-t="cases.cta.d">Cuéntame tu negocio y te muestro dónde la publicidad puede traerte más clientes.</p><span class="btn"><span data-t="hero.cta">Reservar una consulta</span><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+</div>
+</div>
+</section>
+
+<section class="sec" id="fit">
+<div class="wrap">
+<div class="sec-head">
+<span class="tag"><i>05</i><span data-t="fit.eyebrow">¿Encajamos?</span></span>
+<h2 data-t="fit.title">Para quién <em>es esto.</em></h2>
+</div>
+<div class="fit-grid">
+<div class="fit-card yes">
+<h3 data-t="fit.yes">Es para ti si…</h3>
+<ul>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-t="fit.y1">Tienes un negocio que ya vende y quieres más clientes de forma constante.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-t="fit.y2">Quieres entender tus números: cuánto te cuesta un cliente y cuánto te deja.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-t="fit.y3">Puedes invertir en publicidad cada mes, aunque empieces con poco.</span></li>
+</ul>
+</div>
+<div class="fit-card no">
+<h3 data-t="fit.no">No es para ti si…</h3>
+<ul>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg><span data-t="fit.n1">Buscas resultados mágicos en una semana.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg><span data-t="fit.n2">Solo quieres likes y seguidores.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg><span data-t="fit.n3">No quieres cambiar lo que ya no funciona.</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<div class="bridge" aria-hidden="true"><picture><source type="image/avif" srcset="../assets/desk-wide-800.avif 800w, ../assets/desk-wide-1200.avif 1200w, ../assets/desk-wide-1800.avif 1800w, ../assets/desk-wide-2400.avif 2400w" sizes="(max-width: 533px) 533px, 100vw"><img src="../assets/desk-wide-1800.webp" alt="" width="2400" height="1350" loading="lazy" decoding="async"></picture></div>
+
+<section class="final" id="contact">
+<div class="wrap">
+<span class="tag"><i>06</i><span data-t="contact.eyebrow">Consulta</span></span>
+<div class="final-head">
+<h2 class="giant" data-t="final.title">La pregunta <em>sigue ahí.</em></h2>
+<div class="final-art" aria-hidden="true"><picture><source type="image/avif" srcset="../assets/question-380.avif 380w, ../assets/question-760.avif 760w" sizes="(max-width: 640px) 30vw, 18vw"><img src="../assets/question-760.webp" alt="" width="760" height="1258" loading="lazy" decoding="async"></picture></div>
+</div>
+<div class="final-row">
+<p class="lede" data-t="final.sub">¿Cuántos clientes estás perdiendo sin darte cuenta? Reserva una consulta: me cuentas tu negocio y te explico qué haría, en qué plazos y con qué presupuesto.</p>
+<p class="choose" data-t="contact.choose">Escríbeme por donde te resulte más cómodo:</p>
+</div>
+<div class="contacts">
+<a class="contact" href="https://ig.me/m/meln.grow" target="_blank" rel="noopener"><span class="ic"><img src="../assets/icons/instagram-132.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span><b>Instagram</b><span class="v">@meln.grow</span><span class="act"><span data-t="c.ig.a">Escribir por Direct</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<a class="contact" href="https://wa.me/34610333521?text=Hola%2C%20Anton.%20Quiero%20reservar%20una%20consulta." data-href-t="https://wa.me/34610333521?text={c.wa.msg}" target="_blank" rel="noopener"><span class="ic"><img src="../assets/icons/whatsapp-132.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span><b>WhatsApp</b><span class="v">+34 610 333 521</span><span class="act"><span data-t="c.wa.a">Escribir por WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<a class="contact" href="https://t.me/+34610333521" target="_blank" rel="noopener"><span class="ic"><img src="../assets/icons/telegram-132.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span><b>Telegram</b><span class="v">+34 610 333 521</span><span class="act"><span data-t="c.tg.a">Escribir por Telegram</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<a class="contact" href="mailto:antonmelnykov01@icloud.com?subject=Consulta" data-href-t="mailto:antonmelnykov01@icloud.com?subject={c.em.subj}"><span class="ic"><img src="../assets/icons/email-132.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span><b>Email</b><span class="v">antonmelnykov01@<wbr>icloud.com</span><span class="act"><span data-t="c.em.a">Enviar un email</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="foot">
+<div class="wrap">
+<div class="foot-grid">
+<div class="foot-col">
+<a class="brand" href="#top">meln<b>.</b>grow</a>
+<p data-t="foot.about">Publicidad en Meta y Google, creatividades, webs y chatbots para negocios en Europa, Ucrania y otros mercados.</p>
+</div>
+<div class="foot-col">
+<span class="label" data-t="foot.pages">Secciones</span>
+<a href="#services" data-t="nav.services">Servicios</a>
+<a href="#audit" data-t="nav.audit">Auditoría</a>
+<a href="#cases" data-t="nav.cases">Casos</a>
+</div>
+<div class="foot-col">
+<span class="label" data-t="foot.contact">Contacto</span>
+<a href="https://www.instagram.com/meln.grow/" target="_blank" rel="noopener">Instagram · @meln.grow</a>
+<a href="https://wa.me/34610333521?text=Hola%2C%20Anton.%20Quiero%20reservar%20una%20consulta." data-href-t="https://wa.me/34610333521?text={c.wa.msg}" target="_blank" rel="noopener">WhatsApp · +34 610 333 521</a>
+<a href="https://t.me/+34610333521" target="_blank" rel="noopener">Telegram · +34 610 333 521</a>
+<a href="mailto:antonmelnykov01@icloud.com?subject=Consulta" data-href-t="mailto:antonmelnykov01@icloud.com?subject={c.em.subj}">antonmelnykov01@icloud.com</a>
+<a href="#contact" data-t="cta.short">Consulta</a>
+</div>
+</div>
+<div class="wordmark" aria-hidden="true">meln<b>.</b>grow</div>
+<div class="foot-base">
+<p>© 2026 Anton Melnykov</p>
+<p data-t="foot.disc">Este sitio no está afiliado a Meta Platforms, Inc. ni a Google LLC.</p>
+</div>
+</div>
+</footer>
+
+<script>
+var MG_calc = (function () {
+var T = {}, LOCALE = "es-ES";
+var $ = function (id) { return document.getElementById(id); };
+
+function money(v) {
+return new Intl.NumberFormat(LOCALE, {
+style: "currency", currency: "EUR", currencyDisplay: "narrowSymbol",
+minimumFractionDigits: Math.abs(v % 1) > 0.004 ? 2 : 0, maximumFractionDigits: 2
+}).format(v);
+}
+function num(v) {
+return new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 1 }).format(v);
+}
+function val(id) {
+var n = $(id).valueAsNumber;
+return isFinite(n) && n >= 0 ? n : 0;
+}
+function side(k, budget) {
+var cpl = val("cpl" + k), conv = Math.min(val("conv" + k), 100);
+var leads = cpl > 0 ? budget / cpl : 0;
+var sales = leads * conv / 100;
+var cps = sales > 0 ? budget / sales : null;
+$("leads" + k).textContent = num(leads);
+$("sales" + k).textContent = num(sales);
+$("cps" + k).textContent = cps === null ? "—" : money(cps);
+return { k: k, cpl: cpl, cps: cps };
+}
+function mark(k, on) {
+var c = $("camp" + k);
+c.classList.toggle("win", on);
+c.querySelector(".badge").hidden = !on;
+}
+function render() {
+if (!$("calc")) return;
+var budget = val("budget");
+$("budgetOut").textContent = money(budget);
+var a = side("A", budget), b = side("B", budget), out = $("verdict");
+mark("A", false); mark("B", false);
+if (a.cps === null && b.cps === null) { out.innerHTML = ""; return; }
+if (a.cps !== null && b.cps !== null && Math.abs(a.cps - b.cps) / Math.max(a.cps, b.cps) < 0.005) {
+out.innerHTML = T["calc.tie"] || ""; return;
+}
+var w, l;
+if (a.cps === null) { w = b; l = a; } else if (b.cps === null) { w = a; l = b; }
+else if (a.cps < b.cps) { w = a; l = b; } else { w = b; l = a; }
+mark(w.k, true);
+if (l.cps === null) { out.innerHTML = ""; return; }
+var x = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 1 }).format(l.cps / w.cps);
+out.innerHTML = (T["calc.verdict"] || "").replace("{w}", w.k).replace("{x}", x) +
+(w.cpl > l.cpl ? (T["calc.though"] || "") : "") + ".";
+}
+
+document.addEventListener("input", function (e) {
+if (e.target.closest && e.target.closest("#calc")) render();
+});
+document.addEventListener("submit", function (e) {
+if (e.target.id === "calc") e.preventDefault();
+});
+
+return function (texts, locale) { T = texts; LOCALE = locale; render(); };
+})();
+(function () {
+var cards = document.querySelectorAll(".svc-card");
+for (var i = 0; i < cards.length; i++) (function (card) {
+var btn = card.querySelector(".svc-toggle");
+if (!btn) return;
+btn.addEventListener("click", function (e) {
+e.stopPropagation();
+var open = btn.getAttribute("aria-expanded") !== "true";
+btn.setAttribute("aria-expanded", open ? "true" : "false");
+card.classList.toggle("open", open);
+});
+card.addEventListener("click", function () {
+if (window.getSelection && String(window.getSelection())) return;   // не закривати, коли виділяють текст
+btn.click();
+});
+})(cards[i]);
+})();
+(function () {
+var box = document.querySelector(".audit-media");
+var v = box && box.querySelector("video");
+if (!v) return;
+v.muted = true;
+var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var IO = "IntersectionObserver" in window;
+
+var FADE = 0.8;    // с: згасання починається за стільки до кінця ролика (тривалість переходу задана в style.css)
+var PAUSE = 450;   // мс темряви між колами
+var visible = false, waiting = false, loaded = false;
+
+function load() {
+if (loaded) return;
+loaded = true;
+if (v.getAttribute("data-poster")) v.poster = v.getAttribute("data-poster");
+if (still) return;          // хто вимкнув анімації, бачить лише постер
+v.preload = "auto";         // браузер починає качати відео (load() тут не потрібен: він перериває вже розпочатий запит)
+if (visible) start();
+}
+if (IO) {
+var near = new IntersectionObserver(function (es) {
+if (es[0].isIntersecting) { near.disconnect(); load(); }
+}, { rootMargin: "900px 0px" });
+near.observe(box);
+} else load();
+if (still) return;
+
+box.classList.add("off");   // перше коло теж починається з плавної появи
+function play() {
+var p = v.play();
+if (p && p.catch) p.catch(function () { box.classList.remove("off"); });
+box.classList.remove("off");
+}
+v.addEventListener("timeupdate", function () {
+if (v.duration && v.currentTime >= v.duration - FADE) box.classList.add("off");
+});
+v.addEventListener("ended", function () {
+box.classList.add("off");
+waiting = true;
+setTimeout(function () {
+waiting = false;
+v.currentTime = 0;
+if (visible) play();
+}, PAUSE);
+});
+
+function start() {
+if (!loaded || !v.paused || waiting) return;
+if (v.ended || (v.duration && v.currentTime >= v.duration - 0.05)) v.currentTime = 0;
+play();
+}
+if (!IO) { visible = true; start(); return; }
+new IntersectionObserver(function (entries) {
+entries.forEach(function (e) {
+visible = e.isIntersecting;
+if (visible) start();
+else if (!v.paused) v.pause();
+});
+}, { threshold: 0.25 }).observe(box);
+})();
+(function () {
+var ph = document.querySelector(".about .photo");
+if (!ph) return;
+if (!("IntersectionObserver" in window)) { ph.classList.add("lit"); return; }
+new IntersectionObserver(function (es) {
+es.forEach(function (e) {
+if (e.intersectionRatio >= 0.35) ph.classList.add("lit");
+else if (!e.isIntersecting) ph.classList.remove("lit");
+});
+}, { threshold: [0, 0.35] }).observe(ph);
+})();
+(function () {
+if (!("IntersectionObserver" in window)) return;
+var els = document.querySelectorAll(".hero-art img, .final-art img, .marquee .track");
+if (!els.length) return;
+var io = new IntersectionObserver(function (es) {
+es.forEach(function (e) { e.target.style.animationPlayState = e.isIntersecting ? "" : "paused"; });
+}, { rootMargin: "100px 0px" });
+for (var i = 0; i < els.length; i++) io.observe(els[i]);
+})();
+(function () {
+var T = {"calc.a": "Campaña A", "calc.b": "Campaña B", "calc.cpl": "Coste por lead", "calc.conv": "Leads que compran", "calc.leads": "leads", "calc.sales": "ventas", "calc.cps": "Coste por venta", "calc.win": "Más rentable", "calc.budget": "Mismo presupuesto", "calc.verdict": "La campaña {w} consigue cada venta <em>{x}× más barata<\/em>", "calc.though": ", aunque su lead cueste más", "calc.tie": "Las dos campañas salen igual por venta."};
+MG_calc(T, "es-ES");
+function save(l) { try { localStorage.setItem("mg-lang", l); } catch (e) {} }
+document.querySelectorAll("[data-setlang]").forEach(function (a) {
+a.addEventListener("click", function () { save(a.getAttribute("data-setlang")); });
+});
+if (document.prerendering) document.addEventListener("prerenderingchange", function () { save("es"); }, { once: true });
+else save("es");
+})();
+</script>
+<script type="speculationrules">{"prerender":[{"source":"document","eagerness":"moderate","where":{"and":[{"selector_matches":"[data-setlang]"},{"not":{"selector_matches":"[aria-current]"}}]}}]}</script>
+</body>
+</html>
